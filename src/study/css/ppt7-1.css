@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@700&display=swap');
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #141414;
+}

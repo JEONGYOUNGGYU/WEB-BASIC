@@ -1,0 +1,30 @@
+* {
+    font-size: 30px;
+}
+span {
+    color: red !important;
+    font-weight: 700;
+}
+
+#subject-high-nav {
+    color: rgb(22, 128, 228);
+}
+
+.content {
+    color: rgb(231, 71, 98);
+}
+.content{
+    color: black;
+}
+
+p {
+    color: #1fff02;
+}
+
+p, span {
+    color: #1fff02;
+}
+
+p, span, h1 {
+    color: #0cbbec;
+}
