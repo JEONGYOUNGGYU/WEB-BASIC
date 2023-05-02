@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppt17-2</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+        .bg-color{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <!--
+        박스를 클릭할때마다 박스 색상이 블랙 -> 레드, 레드-> 블랙
+    -->
+
+    <script>
+        const box = document.querySelector("#box");
+        
+        box.onclick = () => {
+            if(box.style.backgroundColor == "black") {
+                box.style.backgroundColor = "red";
+            }else {
+                box.style.backgroundColor = "black";
+            }
+        }
+
+    </script>
+</body>
+</html>

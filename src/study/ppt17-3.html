@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppt17-3</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Dom 노드 study</h1>
+            <p>안녕하세요. javascript 수업입니다.</p>
+        </div>
+    </div>
+    <button type="button" class="btn">노드 추가</button>
+    
+    <script>
+        const container = document.querySelector("#container");
+        const btn = document.querySelector(".btn");
+        
+
+
+        btn.onclick = () => {
+            // 태그생성
+            const div1 = document.createElement("div");
+            const h1 = document.createElement("h1");
+            const p = document.createElement("p");
+            const input = document.createElement("input");
+
+            // 텍스트 노드 생성
+            const h1Text = document.createTextNode("Dom 노드 study");
+            const pText = document.createTextNode("안녕하세요. javascript 수업입니다.")
+            
+            // 속성 노드 생성
+            const type = document.createAttribute("type");
+            type.value = "password";
+
+            h1.appendChild(h1Text);
+            p.appendChild(pText);
+            input.setAttributeNode(type);
+
+            div1.appendChild(h1);
+            div1.appendChild(p);
+            div1.appendChild(input);
+
+            container.appendChild(div1);
+            
+            
+        }
+    </script>
+
+
+</body>
+</html>

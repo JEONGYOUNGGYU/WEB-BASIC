@@ -1,0 +1,34 @@
+console.log('안녕하세요')
+
+let result = 0;
+for(let i = 0; i < 100; i++){
+    console.log("i = " + i);
+    result += (i + 1);
+
+}
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

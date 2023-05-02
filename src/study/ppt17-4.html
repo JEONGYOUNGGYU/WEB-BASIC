@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppt17-4</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="remove"></h1>
+    </div>
+    <button type="button" class="r-btn">노드 삭제</button>
+
+    <script>
+        // 풀이 1
+        // const container = document.querySelector("#container"); // 왜 얘가 없어도 삭제가 되는거지? = 자식값이 하나라서 기본으로 잡혀지는 것 같다
+        // const rBtn = document.querySelector(".r-btn");
+        // const remove = document.querySelector(".remove");
+
+
+        // rBtn.onclick = () => {
+        //     container.removeChild(remove); 
+        // }
+
+        // 풀이 2
+        const rBtn = document.querySelector(".r-btn");
+
+        rBtn.onclick = () => {
+            const remove = document.querySelector(".remove");
+            remove.parentNode.removeChild(remove); // parentNode = container
+        }
+
+    </script>
+</body>
+</html>

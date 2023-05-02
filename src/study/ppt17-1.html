@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppt17-1</title>
+</head>
+<body>
+    <div id="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+
+    <script>
+        const box1 = document.getElementById("box");
+        const boxes = document.getElementsByClassName("box");
+        const boxTags = document.getElementsByTagName("div")
+
+        console.log(box1);
+        console.log(boxes);
+        console.log(boxTags);
+
+        const box2 = document.querySelector("#box");            // = 1
+        const boxes2 = document.querySelectorAll(".box");       
+        const boxTags2 = document.querySelectorAll("div");
+
+        console.log(box2);
+        console.log(boxes2);
+        console.log(boxTags2);
+
+        console.log(box2.textContent);
+
+        console.log(boxes2[0].textContent);
+
+        /*
+        3을 출력시켜라
+        1을 홍길동으로 바꿔라
+        */
+
+        console.log(boxes2[1].textContent);
+        boxTags2[0].textContent = "홍길동";
+    </script>
+</body>
+</body>
+</html>
